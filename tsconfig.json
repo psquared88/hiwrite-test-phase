@@ -17,7 +17,12 @@
     "resolveJsonModule": true,
     "noEmit": false,
     "noEmitHelpers": false,
-    "jsx": "react"
+    "jsx": "react",
+    "paths": {
+      "@pdf-reader/*": [
+        "./src/*"
+      ]
+    }
   },
   "include": [
     "src",
@@ -32,9 +37,6 @@
     "node_modules"
   ],
   "paths": {
-    "@pdf-reader/*": [
-      "./node_modules/pdf-reader/src/*"
-    ],
     "@/*": [
       "./src/*"
     ]

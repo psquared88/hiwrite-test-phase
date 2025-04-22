@@ -1,25 +1,25 @@
 {
-  "name": "hiwrite",
-  "version": "1.0.12",
-  "description": "hiwrite chrome plugin",
-  "compilerOptions": {
-    "noImplicitAny": false
-  },
+  "name": "pdf-reader",
+  "version": "1.0.0",
+  "description": "pdf reader",
+  "module": "esnext",
+  "main": "build/pdf.bundle.js",
   "scripts": {
-    "dev": "node scripts/dev.js",
-    "build": "node scripts/build.js",
-    "webpack": "webpack --config webpack.config.js --mode production",
+    "build": "webpack --config webpack.config.js --mode production",
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
   },
   "dependencies": {
-    "pdf-reader": "file:../pdf-reader",
-    "jquery": "^2.1.3",
+    "debounce": "^2.1.0",
+    "jquery": "^2.2.4",
     "js-md5": "^0.8.3",
+    "pdfjs-dist": "4.6.82",
+    "react-icons": "^5.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "dotenv-webpack": "^8.1.0",
+    "postcss-loader": "^8.1.1",
     "@babel/core": "^7.20.12",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/preset-env": "^7.20.2",
@@ -41,13 +41,9 @@
     "fs-extra": "^11.1.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
-    "postcss": "^8",
-    "postcss-loader": "^8.1.1",
-    "postcss-preset-env": "^10.0.3",
     "prettier": "^2.8.3",
     "source-map-loader": "^3.0.1",
     "style-loader": "^3.3.1",
-    "tailwindcss": "^3.4.1",
     "terser-webpack-plugin": "^5.3.6",
     "ts-loader": "^9.4.2",
     "type-fest": "^3.5.2",

@@ -12,14 +12,7 @@ yarn
 npm install
 ```
 
-2. Link pdf-reader
-```bash
-# or
-npm link pdf-reader
-```
-
-
-3. To start the mock server, run
+2. To start the mock server, run
 
 ```bash
 yarn server
@@ -29,7 +22,7 @@ npm run server
 
 > The mock API server is http://localhost:3000/
 
-4. To start development, run
+3. To start development, run
 
 ```bash
 yarn start
