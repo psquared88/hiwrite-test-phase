@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noEmit": false,
+    "noEmitHelpers": false,
+    "jsx": "react"
+  },
+  "include": [
+    "src",
+    "src/pages/Pdf/lib/pdf.worker.min.mjs",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "build",
+    "node_modules"
+  ],
+  "paths": {
+    "@pdf-reader/*": [
+      "./node_modules/pdf-reader/src/*"
+    ],
+    "@/*": [
+      "./src/*"
+    ]
+  }
+}
